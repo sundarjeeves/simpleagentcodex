@@ -22,3 +22,11 @@ npm start
 ```
 
 The application will be available at [http://localhost:5000](http://localhost:5000).
+
+## Running tests
+
+Execute the test suite using:
+
+```bash
+npm test
+```
