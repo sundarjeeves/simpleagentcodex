@@ -23,6 +23,15 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server running at http://localhost:${PORT}`);
-});
+function startServer(port = PORT) {
+  return server.listen(port, '0.0.0.0', () => {
+    console.log(`Server running at http://localhost:${port}`);
+  });
+}
+
+if (require.main === module) {
+  startServer();
+}
+
+module.exports = { server, startServer };
+

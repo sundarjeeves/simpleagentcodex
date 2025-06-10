@@ -23,7 +23,8 @@ npm start
 
 The application will be available at [http://localhost:5000](http://localhost:5000).
 
-Alternatively, you can run the server using Node's built-in `http` module:
+Opening this URL in your browser displays a simple page from `static/index.html`.
+
 
 ```bash
 npm run local
